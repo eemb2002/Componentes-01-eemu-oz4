@@ -1,0 +1,152 @@
+/* Encabezado */
+.header {
+    background-color: #1c1c1c; /* Dark gray for header background */
+    color: #00ff00; /* Neon green text color */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.5); /* Neon glow effect */
+  }
+  
+  .header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+  }
+  
+  /* Tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.1em;
+    text-align: left;
+    background-color: #282c34; /* Dark background for table */
+    color: #fff; /* White text */
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #444; /* Darker border for table cells */
+  }
+  
+  th {
+    background-color: #1e1e1e; /* Slightly lighter dark gray */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #333; /* Darker row for even rows */
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #282c34; /* Base dark background for odd rows */
+  }
+  
+  tr:hover {
+    background-color: #444; /* Highlight on hover */
+  }
+  
+  img {
+    border-radius: 8px;
+    border: 2px solid #00ff00; /* Neon green border around images */
+    cursor: pointer;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #00ff00; /* Neon green text color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #aaffaa; /* Slightly lighter neon green on hover */
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker overlay for modal */
+  }
+  
+  .modal-content {
+    background-color: #1c1c1c; /* Dark background for modal */
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 2px solid #00ff00; /* Neon green border for modal */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Neon glow effect for modal */
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #00ff00; /* Neon green close button */
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #aaffaa; /* Slightly lighter neon green on hover */
+  }
+  
+  h2 {
+    color: #00ff00; /* Neon green text for character name */
+  }
+  
+  p {
+    color: #fff; /* White text for paragraph */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    color: #00ff00; /* Neon green text for episode list */
+  }
+  
+  @media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    tr {
+      margin-bottom: 10px;
+    }
+  
+    td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  
